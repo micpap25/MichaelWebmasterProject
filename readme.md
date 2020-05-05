@@ -1,9 +1,17 @@
-# BCA NHS rebuild
+# Michael's Webmaster Project
 
-rebuild of the BCA NHS in express and vue
+I made various changes to the website to display my capabilities as a Web Master.
 
-## NOTES
+## Finished:
 
-(If these are in the repo then the project aint done!)
+Nothing yet!
+All changes can be found in the "Michael's Changes" Section of Info. 
 
-- change axios url
+## To-Do List:
+
+Figure out how to deploy myself (Shouldn’t be hard, use github pages or webstorm)
+Fix “Get Tutored” button (super easy)
+Add “Get Tutored” button to login version (super easy)
+Create a “Michael’s changes” page and add it to the info dropdown (not hard)
+Let people choose their time & hour for “Get Tutored” to reduce amount that has to be pulled (IDK how hard)
+Let members describe themselves when setting tutoring hours. 
