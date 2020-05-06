@@ -8,7 +8,7 @@ const oldSess = require("./dbbackup");
 const crypto = require("crypto");
 require("dotenv").config();
 
-const db = "mongodb+srv://micpap25:Vickierokkos2003!@cluster0-ltkih.mongodb.net/test?retryWrites=true&w=majority";
+const db = process.env.DB;
 
 const clearAll = () => {
   Subject.remove({}, function(err) {
@@ -130,7 +130,6 @@ const createSubj = subString => {
 };
 
 const pushUser = usr => {
-  console.log(process.env.BACKEND_URL);
   axios
     .post(process.env.BACKEND_URL + "api/auth/register", {
       name: usr.name,

@@ -12,7 +12,7 @@ server.use(express.json());
 server.use(cors());
 
 // connect to mongodb
-const db = "mongodb+srv://micpap25:Vickierokkos2003!@cluster0-ltkih.mongodb.net/test?retryWrites=true&w=majority";
+const db = process.env.DB;
 mongoose
   .connect(db, {
     useNewUrlParser: true,
