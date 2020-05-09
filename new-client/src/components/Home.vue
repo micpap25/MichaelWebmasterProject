@@ -24,10 +24,9 @@
       <div class="centered" v-if="this.$store.state.isLoggedIn">
         <h2 class="text-light">Welcome, {{ this.$store.state.user.name }}</h2>
         <b-button variant="primary" to="/tutoring/edit">Edit Tutoring</b-button>
-        <b-button variant="success" to="/logging/tutor">Log Tutoring</b-button>
-        <b-button variant="info" to="/logging/commserve"
-          >Log Community Service</b-button
-        >
+        <b-button variant="secondary" to="/logging/tutor">Log Tutoring</b-button>
+        <b-button variant="info" to="/logging/commserve">Log Community Service</b-button>
+        <b-button variant="success" to="/tutoring/get">Get Tutored</b-button>
         <!-- <div class="stats text-light">
           <h5>Tutoring: 90 hours to do!</h5>
           <h5>Community Service: 10 hours internal, 20 external to go!</h5>
@@ -36,7 +35,7 @@
       <div class="centered" v-else>
         <h2 class="text-light">Welcome!</h2>
         <b-button variant="primary" to="/login">Log In</b-button>
-        <b-button variant="success">Get Tutored</b-button>
+        <b-button variant="success" to="/tutoring/get">Get Tutored</b-button>
       </div>
     </b-container>
   </div>
