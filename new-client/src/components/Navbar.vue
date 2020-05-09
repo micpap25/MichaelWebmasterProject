@@ -12,9 +12,11 @@
         <b-collapse id="nav-collapse" is-nav>
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
+            <b-nav-item to="/feedback">Feedback</b-nav-item>
             <b-nav-item-dropdown text="Info">
               <b-dropdown-item to="/info/bylaws">Bylaws</b-dropdown-item>
               <b-dropdown-item to="/info/requirements">Membership Requirements</b-dropdown-item>
+              <b-dropdown-item to="/info/changelog">Change Log</b-dropdown-item>
             </b-nav-item-dropdown>
             <!-- <b-nav-item-dropdown text="Board">
               <b-dropdown-item to="/board">Board Members</b-dropdown-item>

@@ -4,6 +4,7 @@ import store from "../store/store";
 import Home from "@/components/Home";
 import Bylaws from "@/components/info/Bylaws";
 import Requirements from "@/components/info/Requirements";
+import ChangeLog from "@/components/info/ChangeLog";
 import Login from "@/components/auth/Login";
 import Forgot from "@/components/auth/Forgot";
 import Reset from "@/components/auth/Reset";
@@ -11,6 +12,7 @@ import Tutor from "@/components/tutoring/Tutor";
 import GetTutored from "@/components/tutoring/GetTutored";
 import CommServe from "@/components/logging/CommServe";
 import TutorHours from "@/components/logging/TutorHours";
+import Feedback from "@/components/feedback/Feedback";
 
 Vue.use(Router);
 
@@ -67,6 +69,11 @@ export default new Router({
       component: Requirements,
     },
     {
+      path: "/info/changelog",
+      name: "changelog",
+      component: ChangeLog,
+    },
+    {
       path: "/logging/commserve",
       name: "logcommserve",
       component: CommServe,
@@ -76,5 +83,10 @@ export default new Router({
       name: "logtutor",
       component: TutorHours,
     },
+    {
+      path: "/feedback", 
+      name: "feedback",
+      component: Feedback,
+    }, 
   ],
 });
